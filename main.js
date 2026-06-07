@@ -1,3 +1,8 @@
+const express = require('express');
+const path = require('path');
+
+const app = express();
+
 const generateHeader = async () => {
   return `
     <header class="site-header">
@@ -28,13 +33,31 @@ app.get('/battle/scorp', async (req, res) => {
     </head>
     <body>
       ${header}
+
+      <main class="container">
+        <h1>蠍Ⅳ</h1>
+        
+        <div class="button-grid">
+          <button class="skill-btn" id="btn-1">ボタン1</button>
+          <button class="skill-btn" id="btn-2">ボタン2</button>
+          <button class="skill-btn" id="btn-3">ボタン3</button>
+          
+          <button class="skill-btn" id="btn-4">ボタン4</button>
+          <button class="skill-btn" id="btn-5">ボタン5</button>
+          <button class="skill-btn" id="btn-6">ボタン6</button>
+          
+          <button class="skill-btn" id="btn-7">ボタン7</button>
+          <button class="skill-btn" id="btn-8">ボタン8</button>
+          <button class="skill-btn" id="btn-9">ボタン9</button>
+          
+          <button class="skill-btn" id="btn-10">ボタン10</button>
+          <button class="skill-btn" id="btn-11">ボタン11</button>
+          <button class="skill-btn" id="btn-12">ボタン12</button>
         </div>
-      </div>
-      <script>
+      </main>
 
-
-      </script>
       <script src="/js/header.js"></script>
+      <script src="/js/main.js"></script>   <!-- ここに自分で書くスクリプト -->
     </body>
     </html>
   `;

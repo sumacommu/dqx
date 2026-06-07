@@ -64,3 +64,4 @@ app.get('/battle/scorp', async (req, res) => {
   res.send(html);
 });
 
+app.listen(3000, () => console.log('サーバー起動: http://localhost:3000'));
